@@ -5,14 +5,29 @@ def twoSum(nums, target):
     :param target: 目标值
     :return:
     """
-    result = []
-    for i in range(len(nums)):
-        for j in range(i + 1, len(nums)):
-            if (nums[i] + nums[j] == target):
-                result.append(i)
-                result.append(j)
+    # result = []
+    # for i in range(len(nums)):
+    #     for j in range(i + 1, len(nums)):
+    #         if (nums[i] + nums[j] == target):
+    #             result.append(i)
+    #             result.append(j)
+    #
+    #
+    # return result
+    res = []
+    i = 0
+    j = len(nums) - 1
 
-    return result
+    while i < j:
+        if nums[i] + nums[j] == target:
+            res.append(i)
+            res.append(j)
+            break
+        elif nums[i] + nums[j] < target:
+            i += 1
+        else:
+            j -= 1
+    return res
 
 
 if __name__ == '__main__':

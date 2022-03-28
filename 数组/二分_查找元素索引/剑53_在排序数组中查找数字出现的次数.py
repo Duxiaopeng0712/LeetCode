@@ -1,6 +1,8 @@
 from typing import List
 
 
+
+
 # class Solution:
 #     def search(nums: List[int], target: int) -> int:
 #         start, end, count = 0, len(nums) - 1, 0
@@ -42,5 +44,5 @@ class Solution:
 
 if __name__ == '__main__':
     nums = [5, 7, 7, 8, 8, 10]
-    target = 6
+    target = 8
     print(Solution.search(nums, target))

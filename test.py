@@ -21,6 +21,9 @@ if __name__ == '__main__':
     # d = {'a': 24, 'g': 52, 'i': 12, 'k': 33}
     #
     # print(sorted(d.items(), key=lambda x: x[1]))
-    a = [1, 2, 3]
-    for i in range(len(a)):
-        print(a.pop())
+    # a = [1, 2, 3]
+    # for i in range(len(a)):
+    #     print(a.pop())
+
+    # print(list(range(3,9)[:3]))
+    print( 5 % 2)

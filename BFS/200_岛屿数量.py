@@ -20,7 +20,7 @@ class Solution:
                     dfs(i, j)
                     res += 1
 
-            return res
+        return res
 if __name__ == '__main__':
     grid = [
         ["1", "1", "1", "1", "0"],
